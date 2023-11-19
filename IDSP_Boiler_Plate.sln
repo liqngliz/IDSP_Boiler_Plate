@@ -5,7 +5,7 @@ VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDSP_Boiler_Plate", "IDSP_Boiler_Plate.csproj", "{51A3544E-D260-4C05-954C-00083D2EAE19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDSP_Boiler_Plate_Tests", "..\IDSP_Boiler_Plate_Tests\IDSP_Boiler_Plate_Tests.csproj", "{FBA37650-07BE-4DF6-967F-766B5B1667AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDSP_Boiler_Plate_Tests", "IDSP_Boiler_Plate_Tests\IDSP_Boiler_Plate_Tests.csproj", "{C58D39DD-A56F-4780-92D7-B0798CD782DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{51A3544E-D260-4C05-954C-00083D2EAE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51A3544E-D260-4C05-954C-00083D2EAE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51A3544E-D260-4C05-954C-00083D2EAE19}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FBA37650-07BE-4DF6-967F-766B5B1667AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FBA37650-07BE-4DF6-967F-766B5B1667AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FBA37650-07BE-4DF6-967F-766B5B1667AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FBA37650-07BE-4DF6-967F-766B5B1667AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C58D39DD-A56F-4780-92D7-B0798CD782DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C58D39DD-A56F-4780-92D7-B0798CD782DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C58D39DD-A56F-4780-92D7-B0798CD782DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C58D39DD-A56F-4780-92D7-B0798CD782DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
