@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/IDSP_Boiler_Plate.props" />
+</Project>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/IDSP_Boiler_Plate.props" />
+</Project>

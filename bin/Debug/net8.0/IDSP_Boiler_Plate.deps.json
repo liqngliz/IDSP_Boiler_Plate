@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "IDSP_Boiler_Plate/1.0.0": {
+        "runtime": {
+          "IDSP_Boiler_Plate.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IDSP_Boiler_Plate/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

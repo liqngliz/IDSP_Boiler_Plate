@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IDSP_Boiler_Plate", "IDSP_Boiler_Plate.csproj", "{51A3544E-D260-4C05-954C-00083D2EAE19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IDSP_Boiler_Plate_Tests", "..\IDSP_Boiler_Plate_Tests\IDSP_Boiler_Plate_Tests.csproj", "{FBA37650-07BE-4DF6-967F-766B5B1667AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51A3544E-D260-4C05-954C-00083D2EAE19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51A3544E-D260-4C05-954C-00083D2EAE19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51A3544E-D260-4C05-954C-00083D2EAE19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51A3544E-D260-4C05-954C-00083D2EAE19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBA37650-07BE-4DF6-967F-766B5B1667AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBA37650-07BE-4DF6-967F-766B5B1667AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBA37650-07BE-4DF6-967F-766B5B1667AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBA37650-07BE-4DF6-967F-766B5B1667AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {369E721D-BBBA-406D-99E2-3069A59DB307}
+	EndGlobalSection
+EndGlobal
