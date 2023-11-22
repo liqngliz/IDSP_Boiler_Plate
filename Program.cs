@@ -1,8 +1,10 @@
+using IDSP_Boiler_Plate;
+
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-
-app.MapGet("/", () => "Hello World!");
+var auth = new AuthenticationController();
+app.MapGet("/", (HttpContext context) => auth.Process(context));
 
 
 app.Run();

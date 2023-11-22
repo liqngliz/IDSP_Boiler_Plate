@@ -2,10 +2,12 @@
 
 namespace IDSP_Boiler_Plate;
 
-public class AuthenticationController : IController<JObject, JObject>
+public class AuthenticationController : IController<string, HttpContext>
 {   
-    public JObject Process(JObject Input)
-    {
-        return Input;
+    public string Process(HttpContext Input)
+    {   
+        var headers = Input.Request.Headers;
+
+        return JsonConvert.SerializeObject(headers);
     }
 }
