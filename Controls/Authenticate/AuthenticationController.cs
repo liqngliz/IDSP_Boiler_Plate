@@ -1,12 +1,13 @@
 ﻿using System.Text;
+using System.Net.Http.Headers;
 using Microsoft.Extensions.Primitives;
 using Newtonsoft.Json.Linq;
 
 namespace IDSP_Boiler_Plate;
 
-public class AuthenticationController : IController<string, HttpContext>
+public class AuthenticationController : IController<Task<string>, HttpContext>
 {   
-    public string Process(HttpContext Input)
+    public async Task<string> Process(HttpContext Input)
     {   
         var headers = Input.Request.Headers;
         StringValues principalName;
@@ -22,6 +23,11 @@ public class AuthenticationController : IController<string, HttpContext>
         byte[] data = Convert.FromBase64String(principalClaims.ToString());
         string decodedString = System.Text.Encoding.UTF8.GetString(data);
 
+        //get info from BE app
+        using var client = new HttpClient();
+        client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken.ToString());
+        var result = await client.GetAsync("https://authbe20.azurewebsites.net");
+        
         var stringBuilder = new StringBuilder();
         stringBuilder.AppendLine("Hello " + principalName.ToString());
         stringBuilder.AppendLine("Your OAuth Claims Tokens: ");
@@ -29,6 +35,10 @@ public class AuthenticationController : IController<string, HttpContext>
         stringBuilder.AppendLine("Id Token: " + idToken.ToString());
         stringBuilder.AppendLine("Access Token: " + accessToken.ToString());
         stringBuilder.AppendLine("Expires: " + expiresOn.ToString());
+        stringBuilder.AppendLine("request to app 2: " + result.StatusCode.ToString());
+        stringBuilder.AppendLine("response from app 2: " + result.Content);
+
+        client.Dispose();
         return  stringBuilder.ToString();
     }
 }
