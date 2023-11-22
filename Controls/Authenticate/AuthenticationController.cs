@@ -36,7 +36,7 @@ public class AuthenticationController : IController<Task<string>, HttpContext>
         stringBuilder.AppendLine("Access Token: " + accessToken.ToString());
         stringBuilder.AppendLine("Expires: " + expiresOn.ToString());
         stringBuilder.AppendLine("request to app 2: " + result.StatusCode.ToString());
-        stringBuilder.AppendLine("response from app 2: " + result.Content);
+        stringBuilder.AppendLine("response from app 2: " + result.Content.ReadAsStringAsync().Result);
 
         client.Dispose();
         return  stringBuilder.ToString();
