@@ -11,7 +11,7 @@ public class AuthenticationController : IController<string, HttpContext>
         var headers = Input.Request.Headers;
         StringValues principalName;
         StringValues principalClaims;
-        headers.TryGetValue("X-MS-CLIENT-PRINCIPAL-ID", out principalName);
+        headers.TryGetValue("X-MS-CLIENT-PRINCIPAL-NAME", out principalName);
         headers.TryGetValue("X-MS-CLIENT-PRINCIPAL", out principalClaims);
         byte[] data = Convert.FromBase64String(principalClaims.ToString());
         string decodedString = System.Text.Encoding.UTF8.GetString(data);
